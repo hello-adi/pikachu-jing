@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+* {
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #33332d;
+  /* background-color: #e7c6ff; */
+}
+
+.main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  /* color: #6d6875; */
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+#timer {
+  margin-bottom: 20px;
+  font-size: 34px;
+  text-align: center;
+  color: white;
+  /* color: #6d6875; */
+}
+
+#reset-btn {
+  font-size: 18px;
+  background-color: #ced4da;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-1deg);
+  }
+  20% {
+    transform: rotate(1deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-1deg);
+  }
+  80% {
+    transform: rotate(1deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+img:hover {
+  /* Start the vibrate animation with duration 0.5 seconds */
+  animation: vibrate 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
